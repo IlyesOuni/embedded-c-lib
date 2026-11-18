@@ -1,0 +1,51 @@
+---
+:source:
+  :file: test/test_ring_buffer.c
+  :dirname: test
+  :basename: test_ring_buffer.c
+:successes:
+- :test: test_new_buffer_is_empty
+  :line: 16
+  :message: ''
+  :unity_test_time: 0
+- :test: test_init_rejects_bad_parameters
+  :line: 22
+  :message: ''
+  :unity_test_time: 0
+- :test: test_put_one_increases_count
+  :line: 33
+  :message: ''
+  :unity_test_time: 0
+- :test: test_put_then_get_returns_same_value
+  :line: 41
+  :message: ''
+  :unity_test_time: 0
+- :test: test_fifo_order
+  :line: 50
+  :message: ''
+  :unity_test_time: 0
+- :test: test_put_fails_when_full
+  :line: 60
+  :message: ''
+  :unity_test_time: 0
+- :test: test_get_fails_when_empty
+  :line: 70
+  :message: ''
+  :unity_test_time: 0
+- :test: test_wrap_around
+  :line: 77
+  :message: ''
+  :unity_test_time: 0
+- :test: test_reset_empties_buffer
+  :line: 93
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 9
+  :passed: 9
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.00182050800003708

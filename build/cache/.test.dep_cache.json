@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "hash_algorithm": "sha256",
+  "entries": {
+    "/home/ilyes/embedded-c-lib/build/test/preprocess/build_directives/test/test_ring_buffer/test_ring_buffer.c.yml": {
+      "self_hash": "450dd4e7a3952e098d317a422de7ecedf7e9d4ab52e9de9f2b134c126a604a6c",
+      "meta_hash": "594cd3650dbf6a939e2017d13157e34d77b873424cf3724b0f35b936053c5fb6",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/test/test_ring_buffer.c": "1fe076fd5230b24fb8c00ee5af0542b7d903f771ce454d02766b94ca02730219"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/runners/test/test_ring_buffer_runner.c": {
+      "self_hash": "6809926c85131b3b274196d5cd8ccf936f972564ad0ec57a87f03281625d9c8e",
+      "meta_hash": "9ff46df519546de1ccb542db3d9cf242f32e75c5ed82d8cc927f5030595a39df",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/test/test_ring_buffer.c": "1fe076fd5230b24fb8c00ee5af0542b7d903f771ce454d02766b94ca02730219"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/test/test_ring_buffer.o": {
+      "self_hash": "6ffc07e763eaa4dcf29008937d5c8401e32e0bee0abf767047abd399fb2b5fee",
+      "meta_hash": "69c6b817d2889d27c4f38345ffdb0b05a931f507cc21179036273359d9b508d9",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/test/test_ring_buffer.c": "1fe076fd5230b24fb8c00ee5af0542b7d903f771ce454d02766b94ca02730219",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity.h": "5d8e2e8a0ae4b6e8a2dd55376a7b7064b3577e57ed6d58d3970aa18d5e954796",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity_internals.h": "7c47a4ca1d74a8f190c4481682c9bb318da8f5d74c8fcff72d13ac5438846cd8",
+        "/home/ilyes/embedded-c-lib/src/ring_buffer.h": "39cbb54311620ab8c68a43e6c14ccc9c4451b8e3f36c4a59576e52f3859abbcb"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/src/ring_buffer.o": {
+      "self_hash": "d7d6e2891063bf5e0176b4d01b6ae5a5d148096a3346d86d3211ecf3b3e65315",
+      "meta_hash": "69c6b817d2889d27c4f38345ffdb0b05a931f507cc21179036273359d9b508d9",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/src/ring_buffer.c": "274dcdae5794c757b9edbe629619debe9b3663e2b9d62f5c97c264b220175be9",
+        "/home/ilyes/embedded-c-lib/src/ring_buffer.h": "39cbb54311620ab8c68a43e6c14ccc9c4451b8e3f36c4a59576e52f3859abbcb"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/test_ring_buffer_runner.o": {
+      "self_hash": "65f9481680d37bce022432c5570f39e38a39e04d6353ea9d4d13dc99e25e196a",
+      "meta_hash": "69c6b817d2889d27c4f38345ffdb0b05a931f507cc21179036273359d9b508d9",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/build/test/runners/test/test_ring_buffer_runner.c": "6809926c85131b3b274196d5cd8ccf936f972564ad0ec57a87f03281625d9c8e",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity.h": "5d8e2e8a0ae4b6e8a2dd55376a7b7064b3577e57ed6d58d3970aa18d5e954796",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity_internals.h": "7c47a4ca1d74a8f190c4481682c9bb318da8f5d74c8fcff72d13ac5438846cd8",
+        "/home/ilyes/embedded-c-lib/src/ring_buffer.h": "39cbb54311620ab8c68a43e6c14ccc9c4451b8e3f36c4a59576e52f3859abbcb"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/unity.o": {
+      "self_hash": "b5cde2654f281ff758e3da4ec1e0a296576aac7d657fc06e1d998c70e118eea8",
+      "meta_hash": "1090b418ce0fdc4c8fc23437363bbf429b3af0aa2ae2e16a662f78c6e6c0b747",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity.c": "c9b35a0467e3b2d4ea2ddb86925c322a67a2922aa1a48f732d1dc1237a5b998b",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity.h": "5d8e2e8a0ae4b6e8a2dd55376a7b7064b3577e57ed6d58d3970aa18d5e954796",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity_internals.h": "7c47a4ca1d74a8f190c4481682c9bb318da8f5d74c8fcff72d13ac5438846cd8"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/test_ring_buffer.out": {
+      "self_hash": "746530652fc14d5d21524aadefa43d5f1ddbe4b2dab506e8f287122ef5f70a7a",
+      "meta_hash": "26630fd62736c75bc3dfd6920900479b5dff7fb4b9868a48ba10c451fbf6a2f3",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/test/test_ring_buffer.o": "6ffc07e763eaa4dcf29008937d5c8401e32e0bee0abf767047abd399fb2b5fee",
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/src/ring_buffer.o": "d7d6e2891063bf5e0176b4d01b6ae5a5d148096a3346d86d3211ecf3b3e65315",
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/test_ring_buffer_runner.o": "65f9481680d37bce022432c5570f39e38a39e04d6353ea9d4d13dc99e25e196a",
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/unity.o": "b5cde2654f281ff758e3da4ec1e0a296576aac7d657fc06e1d998c70e118eea8"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/results/test/test_ring_buffer.fixture_run": {
+      "self_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meta_hash": "5db3c8713449c41ab284acdbe8e74509fe1a11f3616f61df6ddec8a820b43f7f",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_ring_buffer/test_ring_buffer.out": "746530652fc14d5d21524aadefa43d5f1ddbe4b2dab506e8f287122ef5f70a7a"
+      },
+      "outputs": {
+        "/home/ilyes/embedded-c-lib/build/test/results/test/test_ring_buffer.pass": "8e21804357c97fc4a0d6f87dce022e0f2085784e4b790bfd5ead858a864c0d05"
+      }
+    }
+  }
+}
