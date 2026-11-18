@@ -72,6 +72,78 @@
       "outputs": {
         "/home/ilyes/embedded-c-lib/build/test/results/test/test_ring_buffer.pass": "8e21804357c97fc4a0d6f87dce022e0f2085784e4b790bfd5ead858a864c0d05"
       }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/preprocess/build_directives/test/test_crc/test_crc.c.yml": {
+      "self_hash": "450dd4e7a3952e098d317a422de7ecedf7e9d4ab52e9de9f2b134c126a604a6c",
+      "meta_hash": "594cd3650dbf6a939e2017d13157e34d77b873424cf3724b0f35b936053c5fb6",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/test/test_crc.c": "5a7b05c38ec23472c6afa7f04a73b2eed287daac015785371fe4b77d8484f6b7"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/runners/test/test_crc_runner.c": {
+      "self_hash": "e898bcf05decbf8cc1e6e485ad7a0008e3ae703b0c403ea80cc51770a3477272",
+      "meta_hash": "d8cea237826552e09a91fe9eb319ba50f946792114264ff6fecf8558f571cddb",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/test/test_crc.c": "5a7b05c38ec23472c6afa7f04a73b2eed287daac015785371fe4b77d8484f6b7"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/test/test_crc.o": {
+      "self_hash": "a15713c9a7b2de133ca58d433f6d440f945ef49853a49e7b23dda7c1f80acff0",
+      "meta_hash": "a736805a17c1c3580cf7a0c5e3bf22032797f4681a0af3b2529887267f3d5407",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/test/test_crc.c": "5a7b05c38ec23472c6afa7f04a73b2eed287daac015785371fe4b77d8484f6b7",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity.h": "5d8e2e8a0ae4b6e8a2dd55376a7b7064b3577e57ed6d58d3970aa18d5e954796",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity_internals.h": "7c47a4ca1d74a8f190c4481682c9bb318da8f5d74c8fcff72d13ac5438846cd8",
+        "/home/ilyes/embedded-c-lib/src/crc.h": "635ac640dedde8b0d7ff020d9b9dcdc30fe426cfde1d3598abdb2b1d0ed83ab3"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/test_crc_runner.o": {
+      "self_hash": "fa4bb5db0a110f6633e3ff1e3c8bf6fb768ad4aef9bc6172ce96e9c4af69367d",
+      "meta_hash": "a736805a17c1c3580cf7a0c5e3bf22032797f4681a0af3b2529887267f3d5407",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/build/test/runners/test/test_crc_runner.c": "e898bcf05decbf8cc1e6e485ad7a0008e3ae703b0c403ea80cc51770a3477272",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity.h": "5d8e2e8a0ae4b6e8a2dd55376a7b7064b3577e57ed6d58d3970aa18d5e954796",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity_internals.h": "7c47a4ca1d74a8f190c4481682c9bb318da8f5d74c8fcff72d13ac5438846cd8",
+        "/home/ilyes/embedded-c-lib/src/crc.h": "635ac640dedde8b0d7ff020d9b9dcdc30fe426cfde1d3598abdb2b1d0ed83ab3"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/src/crc.o": {
+      "self_hash": "8ae4578f3187f7ad6d4880e4d2cd31cf19bb73c7b3c962d0a28dbd99359eeb7c",
+      "meta_hash": "a736805a17c1c3580cf7a0c5e3bf22032797f4681a0af3b2529887267f3d5407",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/src/crc.c": "74b83b1279bcec2a1d67234aa09e3a22cbe18e33734f4823fc2ef5d3a2423b5b",
+        "/home/ilyes/embedded-c-lib/src/crc.h": "635ac640dedde8b0d7ff020d9b9dcdc30fe426cfde1d3598abdb2b1d0ed83ab3",
+        "/home/ilyes/embedded-c-lib/src/crc32_table.h": "bcf70737e4328d470a4511259272a6748ba380df011ce8619137aa988a163237"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/unity.o": {
+      "self_hash": "b5cde2654f281ff758e3da4ec1e0a296576aac7d657fc06e1d998c70e118eea8",
+      "meta_hash": "1090b418ce0fdc4c8fc23437363bbf429b3af0aa2ae2e16a662f78c6e6c0b747",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity.c": "c9b35a0467e3b2d4ea2ddb86925c322a67a2922aa1a48f732d1dc1237a5b998b",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity.h": "5d8e2e8a0ae4b6e8a2dd55376a7b7064b3577e57ed6d58d3970aa18d5e954796",
+        "/home/ilyes/embedded-c-lib/build/vendor/unity/src/unity_internals.h": "7c47a4ca1d74a8f190c4481682c9bb318da8f5d74c8fcff72d13ac5438846cd8"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/test_crc.out": {
+      "self_hash": "ad4d2358211821faec712757d4e94243b72ba7adf683b3fde8239f1fe24ecaf4",
+      "meta_hash": "4767401a4242afd189e8263e246a03c5b76ac44c75371fd7607675236e5aba52",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/test/test_crc.o": "a15713c9a7b2de133ca58d433f6d440f945ef49853a49e7b23dda7c1f80acff0",
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/src/crc.o": "8ae4578f3187f7ad6d4880e4d2cd31cf19bb73c7b3c962d0a28dbd99359eeb7c",
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/test_crc_runner.o": "fa4bb5db0a110f6633e3ff1e3c8bf6fb768ad4aef9bc6172ce96e9c4af69367d",
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/unity.o": "b5cde2654f281ff758e3da4ec1e0a296576aac7d657fc06e1d998c70e118eea8"
+      }
+    },
+    "/home/ilyes/embedded-c-lib/build/test/results/test/test_crc.fixture_run": {
+      "self_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meta_hash": "5db3c8713449c41ab284acdbe8e74509fe1a11f3616f61df6ddec8a820b43f7f",
+      "deps": {
+        "/home/ilyes/embedded-c-lib/build/test/out/test/test_crc/test_crc.out": "ad4d2358211821faec712757d4e94243b72ba7adf683b3fde8239f1fe24ecaf4"
+      },
+      "outputs": {
+        "/home/ilyes/embedded-c-lib/build/test/results/test/test_crc.pass": "3ebe575ee1481416cda41d53da4e192ef1795724c8dc02aa96f728b927168ca7"
+      }
     }
   }
 }
