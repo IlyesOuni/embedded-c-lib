@@ -56,7 +56,7 @@
   :enabled:
     #- beep                           # beeps when finished, so you don't waste time waiting for ceedling
     - module_generator                # handy for quickly creating source, header, and test templates
-    #- gcov                           # test coverage using gcov. Requires gcc, gcov, and a coverage analyzer like gcovr
+    - gcov                           # test coverage using gcov. Requires gcc, gcov, and a coverage analyzer like gcovr
     #- cppcheck                       # static analysis using cppcheck. Requires cppcheck to be installed
     #- valgrind                       # memory analysis using valgrind. Requires valgrind to be installed (Linux only)
     #- sanitize                       # ASan, UBSan, and leak checks. Requires a compiler with sanitizers (Linux or macOS)
@@ -130,7 +130,17 @@
   # Enable to inject name of a test as a unique compilation symbol into its respective executable build. 
   :use_test_definition: FALSE 
 
+
 # Configure additional command line flags provided to tools used in each build step
+:flags:
+  :test:
+    :compile:
+      '*':
+        - -std=c99
+        - -Wall
+        - -Wextra
+        - -Werror
+        - -pedantic
 # :flags:
 #   :release:
 #     :compile:         # Add '-Wall' and '--02' to compilation of all files in release target

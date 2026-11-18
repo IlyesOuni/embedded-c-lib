@@ -21,14 +21,14 @@ uint16_t crc16_ccitt(const uint8_t *data, size_t len)
 
 uint32_t crc32(const uint8_t *data, size_t len)
 {
-    uint32_t crc = 0xFFFFFFFFUL;
+    uint32_t crc = 0xFFFFFFFFU;
 
     for (size_t i = 0U; i < len; i++) {
         crc ^= data[i];
 
         for (uint8_t bit = 0U; bit < 8U; bit++) {
-            if ((crc & 1UL) != 0UL) {
-                crc = (crc >> 1) ^ 0xEDB88320UL;
+            if ((crc & 1U) != 0U) {
+                crc = (crc >> 1) ^ 0xEDB88320U;
             } else {
                 crc >>= 1;
             }
@@ -40,7 +40,7 @@ uint32_t crc32(const uint8_t *data, size_t len)
 /* ← NOUVEAU : version rapide avec table */
 uint32_t crc32_fast(const uint8_t *data, size_t len)
 {
-    uint32_t crc = 0xFFFFFFFFUL;
+    uint32_t crc = 0xFFFFFFFFU;
 
     for (size_t i = 0U; i < len; i++) {
         crc = crc32_table[(crc ^ data[i]) & 0xFFU] ^ (crc >> 8);

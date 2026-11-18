@@ -1,13 +1,13 @@
 #include "bits.h"
 
-/* ---------- Champs ---------- */
 uint32_t write_field(uint32_t reg, uint32_t mask, uint8_t pos, uint32_t value)
 {
-    reg &= ~(mask << pos);            /* 1) effacer la zone du champ      */
-    reg |= (value & mask) << pos;     /* 2) écrire la valeur (coupée)     */
-    return reg;
-}
+    uint32_t result = reg;             /* copie locale : on ne modifie pas le paramètre */
 
+    result &= ~(mask << pos);          /* 1) effacer la zone du champ  */
+    result |= (value & mask) << pos;   /* 2) écrire la valeur (coupée) */
+    return result;
+}
 uint32_t read_field(uint32_t reg, uint32_t mask, uint8_t pos)
 {
     return (reg >> pos) & mask;       /* ramener à droite, garder le champ */

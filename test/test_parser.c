@@ -205,3 +205,10 @@ void test_ring_buffer_to_parser_integration(void)
     TEST_ASSERT_EQUAL_HEX8(0x55, last.cmd);
     TEST_ASSERT_TRUE(rb_is_empty(&rb));
 }
+/* État corrompu en mémoire → retour à un état sûr */
+void test_corrupted_state_recovers(void)
+{
+    p.state = (parser_state_t)99;              /* simule une corruption */
+    parser_feed(&p, 0x00);
+    TEST_ASSERT_EQUAL(PS_WAIT_SOF, p.state);
+}

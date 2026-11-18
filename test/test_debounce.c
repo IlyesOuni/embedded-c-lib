@@ -68,3 +68,10 @@ void test_short_glitch_while_pressed_is_ignored(void)
     TEST_ASSERT_EQUAL_INT(0, feed(true, 50, BTN_EVT_RELEASE));
     TEST_ASSERT_EQUAL(BTN_PRESSED, d.state);
 }
+/* 7. État corrompu en mémoire → retour à un état sûr */
+void test_corrupted_state_recovers(void)
+{
+    d.state = (btn_state_t)99;                 /* simule une corruption */
+    TEST_ASSERT_EQUAL(BTN_EVT_NONE, debounce_update(&d, true));
+    TEST_ASSERT_EQUAL(BTN_RELEASED, d.state);
+}
