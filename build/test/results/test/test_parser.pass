@@ -1,0 +1,63 @@
+---
+:source:
+  :file: test/test_parser.c
+  :dirname: test
+  :basename: test_parser.c
+:successes:
+- :test: test_build_frame_layout
+  :line: 37
+  :message: ''
+  :unity_test_time: 0
+- :test: test_build_rejects_bad_parameters
+  :line: 52
+  :message: ''
+  :unity_test_time: 0
+- :test: test_valid_frame_is_delivered
+  :line: 62
+  :message: ''
+  :unity_test_time: 0
+- :test: test_bad_crc_is_rejected
+  :line: 77
+  :message: ''
+  :unity_test_time: 0
+- :test: test_corrupted_payload_is_rejected
+  :line: 90
+  :message: ''
+  :unity_test_time: 0
+- :test: test_too_long_len_is_rejected_then_parser_recovers
+  :line: 103
+  :message: ''
+  :unity_test_time: 0
+- :test: test_garbage_before_sof_is_ignored
+  :line: 116
+  :message: ''
+  :unity_test_time: 0
+- :test: test_stray_sof_before_frame
+  :line: 130
+  :message: ''
+  :unity_test_time: 0
+- :test: test_two_frames_back_to_back
+  :line: 143
+  :message: ''
+  :unity_test_time: 0
+- :test: test_payload_containing_sof
+  :line: 157
+  :message: ''
+  :unity_test_time: 0
+- :test: test_empty_payload
+  :line: 169
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ring_buffer_to_parser_integration
+  :line: 183
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 12
+  :passed: 12
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.004573108000840875
